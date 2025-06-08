@@ -4,4 +4,52 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('odd-fellow-KNWfI_7DhQg-unsplash.jpg');
     }
+.hero {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    float: left;
+}
+h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.ribeye-marrow-regular {
+  font-family: "Ribeye Marrow", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.righteous-regular {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+
+.empower-text {
+    font-size: 2em;
+    margin: 20px 0;
+    font-family: "ribeye marrow", serif;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+}
+.learn-more-button {
+    background-color:rgb(253, 251, 251);
+    padding: 15px 30px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    font-family:"righteous", sans-serif;
+    font-weight: bold;
+
+
+}
