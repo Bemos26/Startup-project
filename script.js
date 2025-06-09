@@ -131,3 +131,30 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 //     return "I’m still learning! Ask me about EduRahisi features.";
 //   }
 // }
+// 
+const puter = new Puter();
+
+// Add chatbot responses
+puter.addRule("hello", "Hi there! How can I assist?");
+puter.addRule("courses", "EduRahisi offers interactive learning materials!");
+puter.addRule("fact", "Did you know? JavaScript powers most websites!");
+
+function getBotResponse(userMessage) {
+  return puter.ask(userMessage) || "I'm still learning! Ask me something else.";
+}
+
+document.getElementById("chat-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevents page reload
+
+  let userMessage = document.getElementById("user-message").value;
+  let chatOutput = document.getElementById("chat-output");
+
+  if (userMessage.trim() === "") return;
+
+  let botResponse = getBotResponse(userMessage);
+
+  chatOutput.innerHTML += `<div class='message user'><strong>You:</strong> ${userMessage}</div>`;
+  chatOutput.innerHTML += `<div class='message bot'><strong>EduRahisi Bot:</strong> ${botResponse}</div>`;
+
+  document.getElementById("user-message").value = "";
+});
