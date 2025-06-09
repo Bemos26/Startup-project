@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: scroll;
+    overflow-x: hidden;
 
     }
 .hero {
@@ -69,10 +69,23 @@ h1 {
 }
 .logo {
     position: relative;
-    display:inline-block;
     border-radius: 200px;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    width: 80%;
+    margin:0 auto;
+    padding: 20px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
 
 }
 .mission-statement {
@@ -113,8 +126,6 @@ h1 {
     transition: transform 0.3s ease;
     color: white;
     position: relative;
-    height: 100vh;
-    overflow: scroll;
 
 
 
@@ -137,9 +148,7 @@ h2 {
 }
 .features-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: row;
     margin-top: 20px;
     color:tomato;
     background-image: url(dan-dimmock-sNwnjxm8eTY-unsplash.jpg);
@@ -155,6 +164,15 @@ h2 {
     transition: transform 0.3s ease;
     cursor: -webkit-grab;
     font-size: 2em;
+    overflow: scroll;
+    height: 100vh;
+    text-align: center;
+    overflow-x: auto;
+    gap: 20px;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+
+
 
 }
 .testimonials-container {
@@ -323,4 +341,83 @@ h2 {
     background-color: rgba(255, 255, 255, 0.8);
     transition: transform 0.3s ease;
 
+}
+.student-features {
+    position: relative;
+    display: flex;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex:0 0 auto;
+    min-width: 200px;
+
+}
+.parent-features {
+    position: relative;
+    display: flex;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex:0 0 auto;
+    min-width: 200px;
+
+
+}
+.teacher-features {
+    position: relative;
+    display: flex;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    flex:0 0 auto;
+    min-width: 200px;
+
+}
+.faq-container {
+  margin: auto;
+  padding: 20px;
+  font-size: 2em;
+  background-color: rgba(119, 10, 10, 0.8);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    color: black;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+    text-align: center;
+
+
+}
+
+.faq-item {
+  border-bottom: 2px solid #ddd;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.faq-question {
+  font-weight: bold;
+  color: #333;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  color: #555;
 }
