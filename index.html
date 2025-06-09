@@ -22,9 +22,19 @@
         <p class="empower-text">
             "To empower young minds for the better future"
         </p>
-            <button class="learn-more-button">
-            Learn more
-            </button>
+        <div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>More About EduRahisi</h2>
+    <p>Discover our innovative learning tools designed for seamless education
+       and engagement. EduRahisi is committed to making learning accessible and 
+       enjoyable for students, teachers, and parents alike.</p>
+        
+    </p>
+  </div>
+</div>
+
+<button class="learn-more-button">Learn More</button>
     
         
         <nav>
@@ -196,7 +206,7 @@
                 Details on the website are not enough? reach out to us and
                 let us talk about this intelligence!
             </p>
-            <form action="submit_contact" method="post">
+            <form id="contact-form">
                 <p><label for="name">Name:</label>
                 <input type="text" id="name" name="name" required> 
                 </p>
@@ -215,6 +225,11 @@
                 
                 <p><button type="submit">Send</button>
                 </p>
+
+                <p id="thank-you" style="display: none; color: green; font-weight: bold;">
+  Thank you for your message! We'll get back to you soon.
+</p>
+
 
         
 
