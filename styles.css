@@ -3,14 +3,12 @@ body {
     background-image: url('odd-fellow-KNWfI_7DhQg-unsplash.jpg');
     background-size: cover;
     background-position: center;
-    margin: 0;
-    padding: 0;
-    color: white;
-    display: flex;
+    color: white;;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    margin: 0 auto
 
     }
 .hero {
