@@ -476,3 +476,32 @@ body {
     margin: 0 auto;
 
 }
+.chat-box {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  overflow-y: auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #007bff;
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+.message {
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+}
+
+.user {
+  background-color: #007bff;
+  color: white;
+  text-align: right;
+}
+
+.bot {
+  background-color: #ddd;
+  color: black;
+  text-align: left;
+}
